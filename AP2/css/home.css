@@ -1,0 +1,178 @@
+@font-face {
+    font-family:"Itim";
+    src: url("Itim-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Itim";
+    height: 100vh;
+}
+
+
+/*informações sobre a caixa do menu*/
+.menulateral{
+    width: 60px;
+    height: 97%;
+    background-color: white;
+    margin-top: 10px;
+
+    /*tamanho da bora, tipo da borda e cor da borda*/
+
+    /*linha para tirar a borda da esquerda*/
+    border-left: none;
+
+    transition: 0.3s;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*Item para abri o menu*/
+.hamburguer > i{
+    color: black;
+    font-size: 35px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/*Conteudo do menu*/
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li.conteudo{
+    transition: 0.5s;
+}
+
+ul li:hover{
+    background-color: aqua;
+}
+
+ul li.conteudo a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+
+    font-size: 35px;
+}
+
+ul li.conteudo a .txt{
+    margin-left: 60px;  
+}
+
+.inferior{
+    padding-top: 200px;
+}
+
+ul li.conteudo2 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+}
+
+ul li.conteudo2 a{
+    margin-left: 60px;
+}
+
+
+/*menu superior - logotipo e perfil*/
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.menu-superior .logotipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.menu-superior .perfil{
+    padding-right: 18px;
+    position: absolute;
+    right: 0;
+}
+
+.menu-superior .perfil .img{
+    cursor: pointer;
+}
+
+
+/*Locoalização das regioes*/
+.regiao{
+    position: absolute;
+    transform: translate(50%, 50%);
+}
+
+#norte {
+    height: 250px;
+    top: 112px;
+    left: 480px;
+}
+#norte:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#nordeste{
+    height: 250px;
+    top: 188px;
+    left: 904px;
+}
+#nordeste:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#centro-oeste {
+    height: 220px;
+    top:294px;
+    left:722px;
+}
+#centro-oeste:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#sudeste {
+    height: 157px;
+    top:414px;
+    left:841px;
+    
+}
+#sudeste:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#sul {
+    height: 150px;
+    top:529px;
+    left: 821px;
+}
+#sul:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}

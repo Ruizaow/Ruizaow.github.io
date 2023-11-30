@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tela de Login </title>
+        
+        <!-- Link ao CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/login.css">
+    </head>
+
+    <body>
+        <!--------- Lado esquerdo da tela --------->
+        <div class="split left">
+            <img src="./img/login/Imagem Vetorizada.png" alt="Imagem">
+        </div>
+
+        <!--------- Lado direito da tela --------->
+        <div class="split right">
+            <!-- Formulário com campos a serem preenchidos
+                 leva para a Tela de Seleção de Regiões -->
+            <form action="./7-carregamento.html" method="get">
+                <div class="container">
+
+                    <!-- Nome da tela -->
+                    <div class="icone-login">
+                        <img src="./img/menu/point.png" alt="Imagem">
+                        <h2 style="opacity: 0.0"> _ </h2>
+                        <h2> Animalia </h2>
+                    </div> <br>
+
+                    <!-- Campos para Email e Senha -->
+                    <div class="campo-texto">
+                         <!-- Email
+                              o campo é obrigatório de ser preenchido
+                              requer @ e não pode faltar texto antes e depois do @ -->
+                        <div class="texto"> Email: </div>
+                        <div class="campo">
+                            <input  type="email"
+                                    id="email"
+                                    size="36"
+                                    required>
+                        </div>
+                        <!-- Senha
+                             o campo é obrigatório de ser preenchido
+                             e requer pelo menos 8 caracteres -->
+                        <div class="texto"> Senha: </div>
+                        <div class="campo">
+                            <input  type="password"
+                                    id="senha"
+                                    size="31"
+                                    minlength="8"
+                                    required>
+                                <img    src="./img/login/eye-occult.png"
+                                        id="eyeicon">
+                        </div>
+                    </div>
+
+                    <!-- Opção de caixa de marcar para lembrar login -->
+                    <div class="lemblogin">
+                        <input  type="checkbox"
+                                id="lembra-login"
+                                style="cursor: pointer">
+                            <label  for="lembra-login"
+                                    style="cursor: pointer"> Lembrar login </label>
+                    </div>
+
+                    <!-- Link para recuperação de senha
+                         abre um pop-up para recuperar a senha do usuário -->
+                    <div class="esqsenha">
+                        <a href="./3.1-paginaRecuperacaoSenha.html">
+                        Esqueceu sua senha? </a>
+                    </div> <br>
+
+                    <!-- Botões de Login e Cadastro -->
+                    <div class="botoes">
+                        <!-- Login
+                             somente é clicável quando os campos acima forem preenchidos de forma válida -->
+                        <div class="entrar">
+                            <button type="submit">
+                                <p> Entrar </p>
+                            </button>
+                        </div>
+                        <!-- Cadastro
+                             leva para a Tela de Cadastro -->
+                        <div class="cadastro">
+                            <a href="./2-paginaCadastro.html">
+                                <button type="button">
+                                    <p> Não tenho conta </p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Link ao Javascript -->
+        <script src="./js/login.js"></script>
+    </body>
+
+</html>

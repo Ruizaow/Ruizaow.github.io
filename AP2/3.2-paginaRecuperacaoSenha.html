@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tela de Login </title>
+        
+        <!-- Link ao CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/recupSenha-tela2.css">
+    </head>
+
+    <body>
+        <!--------- Lado esquerdo da tela --------->
+        <div class="split left">
+            <img src="./img/login/Ilustra.png" alt="Imagem" id="background">
+        </div>
+
+        <!--------- Lado direito da tela --------->
+        <div class="split right">
+            <!-- Formulário com campos a serem preenchidos
+                 leva para a Tela de Seleção de Regiões -->
+            <form action="./3.3-paginaRecuperacaoSenha.html" method="get">
+                <div class="container">
+
+                    <!-- Nome da tela -->
+                    <div class="icone-recupSenha">
+                        <img src="./img/menu/point.png" alt="Imagem">
+                        <h2 style="opacity: 0.0"> _ </h2>
+                        <h2>Animalia </h2>
+                    </div> <br>
+
+                    <!-- Campo para Email -->
+                    <div class="campo-texto">
+                        <div class="texto"> Insira o código de seis dígitos abaixo: </div>
+                        <div class="campo">
+                            <input  type="text"
+                                    id="codigo"
+                                    size="36"
+                                    required>
+                    </div>
+
+                    <!-- Botões e Imagem -->
+                    <div class="enviar">
+                        <button type="submit" id="enviarBotao">
+                            <p> Enviar </p>
+                        </button>
+                    </div>
+
+                    <div class ="img-macaco">
+                        <img src="./img/login/Macaco.png" id="cachorroImagem" alt="Imagem">
+                    </div>
+                        
+                    <div class="voltarLogin">
+                        <a href="./1-paginaLogin.html">
+                            <button type="button">
+                                <p> Voltar ao login </p>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Link ao Axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Link ao Javascript -->
+        <script src="./js/recupSenha-tela2.js"></script>
+    </body>
+
+</html>

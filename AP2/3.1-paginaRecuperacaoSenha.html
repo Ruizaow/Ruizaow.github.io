@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tela de Login </title>
+        
+        <!-- Link ao CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/recupSenha-tela1.css">
+    </head>
+
+    <body>
+        <!--------- Lado esquerdo da tela --------->
+        <div class="split left">
+            <img src="./img/login/Ilustra.png" alt="Imagem" id="background">
+        </div>
+
+        <!--------- Lado direito da tela --------->
+        <div class="split right">
+            <!-- Formulário com campos a serem preenchidos
+                 leva para a Tela de Seleção de Regiões -->
+            <form action="./3.2-paginaRecuperacaoSenha.html" method="get">
+                <div class="container">
+
+                    <!-- Nome da tela -->
+                    <div class="icone-recupSenha">
+                        <img src="./img/menu/point.png" alt="Imagem">
+                        <h2 style="opacity: 0.0"> _ </h2>
+                        <h2> Animalia </h2>
+                    </div> <br>
+
+                    <!-- Campo para Email -->
+                    <div class="campo-texto">
+                        <div class="texto"> Digite seu endereço de email abaixo, e nós enviaremos 
+                         um código em um instante de segundo para que você recupere sua senha </div>
+                        <div class="campo">
+                            <input  type="email"
+                                    id="email"
+                                    size="36"
+                                    required>
+                    </div>
+
+                    <!-- Botões e Imagem -->
+                    <div class="enviar">
+                        <button type="submit" id="enviarBotao">
+                            <p> Enviar </p>
+                        </button>
+                    </div>
+
+                    <div class ="img-cachorro">
+                        <img src="./img/login/Cachorro confuso.png" id="cachorroImagem" alt="Imagem">
+                    </div>
+                        
+                    <div class="voltarLogin">
+                        <a href="./1-paginaLogin.html">
+                            <button type="button">
+                                <p> Voltar ao login </p>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Link ao Axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Link ao Javascript -->
+        <script src="./js/recupSenha-tela1.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela de Cadastro</title>
+
+        <!-- Link ao CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+    </head>
+
+    <body>
+        <!--------- Lado esquerdo da tela --------->
+        <div class="split left">
+            <img src="./img/login/Ilustra_Gato.png" alt="Imagem">
+        </div>
+
+        <!--------- Lado direito da tela --------->
+        <div class="split right">
+            <!-- Formulário com campos a serem preenchidos
+                 leva para a Tela de Perfil(M) -->
+            <form action="./7-carregamento.html" method="get" id="myform">
+                <div class="container">
+
+                    <!-- Nome da tela -->
+                    <div class="icone-cadastro" style="margin-bottom: 5px">
+                        <img src="./img/menu/point.png" alt="Imagem">
+                        <h2 style="opacity: 0.0"> _ </h2>
+                        <h2> Animalia </h2>
+                    </div>
+
+                    <!-- Campos para Nome, Email, Senha e Confirmar Senha -->
+                    <div class="campo-texto">
+                        <!-- Nome
+                              o campo é obrigatório de ser preenchido -->
+                        <div class="texto"> Nome: </div>
+                        <div class="checkmark" id="check1"> ✔ </div>
+                        <div class="campo">
+                            <input  type="text"
+                                    id="nome"
+                                    size="36"
+                                    required>
+                        </div>
+
+                        <!-- Email
+                              o campo é obrigatório de ser preenchido
+                              requer @ e não pode faltar texto antes e depois do @ -->
+                        <div class="texto"> Email: </div>
+                        <div class="checkmark" id="check2"> ✔ </div>
+                        <div class="campo">
+                            <input  type="email"
+                                    id="email"
+                                    size="36"
+                                    required>
+                        </div>
+                        
+                        <!-- Senha
+                             o campo é obrigatório de ser preenchido
+                             e requer pelo menos 8 caracteres -->
+                        <div class="texto" style="padding-right: 319px;"> Senha:</div>
+                        <div class="checkmark" id="check3"> ✔ </div>
+                        <div class="campo">
+                            <input  type="password"
+                                    id="senha"
+                                    size="31"
+                                    minlength="8"
+                                    required
+                                    style=  "padding: 18px 59px 18px 15px;
+                                             margin-bottom: 8px">
+                                <img    src="./img/login/eye-occult.png"
+                                        id="eyeicon-1"
+                                        style="padding-bottom: 4px">
+                        </div>
+
+                        <!-- Mensagem que aparece quando o usuário digita e há menos de 8 caracteres no campo -->
+                        <div class="mensagem-1" id="msg1">
+                            Escreva pelo menos 8 caracteres </div>
+
+                        <!-- Confirmar Senha
+                             o campo é obrigatório de ser preenchido
+                             e requer que seja escrito igual ao campo Senha -->
+                        <div class="texto" style="padding-right: 235px;"> Confirmar senha: </div>
+                        <div class="checkmark" id="check4"> ✔ </div>
+                        <div class="campo">
+                            <input  type="password"
+                                    id="confirmar-senha"
+                                    size="31"
+                                    required
+                                    style=  "padding: 18px 59px 18px 15px;
+                                             margin-bottom: 8px">
+                                <img    src="./img/login/eye-occult.png"
+                                        id="eyeicon-2"
+                                        style="padding-bottom: 4px">
+                        </div>
+
+                        <!-- Mensagem que aparece quando o usuário digita
+                             ela é alterada no JavaScript
+                             muda conforme o que está digitado no campo Confirmar Senha for igual ou diferente ao que está no campo Senha -->
+                        <div class="mensagem-2" id="msg2" style="margin-bottom: 30px;">
+                            mensagem template </div>
+                    </div>
+
+                    <!-- Botões de Cadastrar e Já Possuo Login -->
+                    <div class="botoes">
+                        <!-- Cadastro
+                             somente é clicável quando os campos acima forem preenchidos de forma válida -->
+                        <div class="cadastro">
+                            <button type="submit" id="cadastroBotao">
+                                <p> Criar conta </p>
+                            </button>
+                        </div>
+                        <!-- Já Possuo Login
+                             leva para a Tela de Login -->
+                        <div class="possuiLogin">
+                            <a href="./1-paginaLogin.html">
+                                <button type="button">
+                                    <p> Já possuo login </p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Link ao Javascript -->
+        <script src="./js/cadastro.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,183 @@
+/* -------------- Incorporação da fonte de texto customizada -------------- */
+@font-face {
+  font-family: "Itim-Regular";
+  src: url("Itim-Regular.ttf") format('truetype');
+}
+
+/* -------------- Estilização do corpo da página -------------- */
+body {
+  background-color: #D9D9D9;
+  font-family: "Itim", Arial;
+  font-size: 18px;
+}
+
+/* -------------- Estilização da divisão de telas - lado esquerdo e direito -------------- */
+.split {
+  height: 87.5%;
+  width: 50%;
+  position: fixed;
+  margin-top: 50px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+.left img {
+  max-width: 100%;
+  max-height: 100%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  right: 0;
+  background-color: #E02029;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+/* -------------- Estilização do fundo da área de login -------------- */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 16px;
+
+  height: 556px;
+  width: 449px;
+
+  background-color: white;
+
+  border: 3px solid;
+  border-radius: 10px;
+}
+
+/* -------------- Estilização do ícone e nome superiores -------------- */
+.icone-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------- Estilização dos textos e posições dos campos de Email e Senha -------------- */
+.campo-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto {
+  font-weight: bold;
+  padding-right: 320px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo img {
+  position: absolute;
+  cursor: pointer;
+  padding-bottom: 4px;
+  right: 13%;
+  width: 40px;
+}
+
+/* -------------- Estilização dos campos de input -------------- */
+input[type=email], input[type=text], input[type=password] {
+  /* top right bottom left */
+  padding: 18px 15px 18px 15px;
+  margin: 3px 0 25px 0;
+
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: black;
+
+  font-size: 18px;
+  font-family: "Itim", Arial;
+}
+
+input[type=text], input[type=password] {
+  /* top right bottom left */
+  padding: 18px 59px 18px 15px;
+  margin-bottom: 10px;
+}
+
+input[type=email]:focus, input[type=text]:focus, input[type=password]:focus {
+  background-color: #F1F1F1;
+  outline: none;
+  border-color: dodgerblue;
+}
+
+/* -------------- Estilização das opções de 'lembrar login' e 'recuperar senha' -------------- */
+.lemblogin {
+  position: absolute;
+  margin-left: 30px;
+}
+
+.esqsenha {
+  margin: 0 35px 15px 0;
+  text-align: right;
+}
+.esqsenha a {
+  text-decoration: none;
+  color: black;
+}
+.esqsenha a:hover {
+  color: #A8A8A8;
+}
+
+/* -------------- Estilização dos botões de Login e Cadastro -------------- */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entrar button {
+  /* top right bottom left */
+  padding: 0 100px 0 100px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+  background-color: #E02029;
+  font-family: "Itim", Arial;
+  font-size: 18px;
+  color: white;
+
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: black;
+
+  opacity: 0.9;
+}
+.entrar button:hover {
+  opacity: 1;
+}
+
+.cadastro button {
+  padding: 0 63px 0 63px;
+
+  cursor: pointer;
+  background-color: white;
+  font-family: "Itim", Arial;
+  font-size: 18px;
+
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: black;
+}
+.cadastro button:hover {
+  background-color: #F1F1F1;
+}

@@ -1,0 +1,167 @@
+@font-face {
+    font-family:"Itim";
+    src: url("Itim-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Itim", Arial;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*informações sobre a caixa do menu*/
+.menulateral{
+    width: 60px;
+    height: 97%;
+    margin-top: 10px;
+
+    /*linha para tirar a borda da esquerda*/
+    border-left: none;
+    
+    background-color: white;
+
+    transition: 0.3s;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*Item para abri o menu*/
+.hamburguer > i{
+    color: black;
+    font-size: 35px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/*Conteudo do menu*/
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li.conteudo{
+    transition: 0.5s;
+}
+
+ul li:hover{
+    background-color: aqua;
+}
+
+ul li.conteudo a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+
+    font-size: 35px;
+}
+
+ul li.conteudo a .txt{
+    margin-left: 60px;  
+}
+
+.inferior{
+    padding-top: 200px;
+}
+
+ul li.conteudo2 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+}
+
+ul li.conteudo2 a{
+    margin-left: 60px;
+}
+
+
+/*menu superior - logotipo e perfil*/
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.menu-superior .logotipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.menu-superior .perfil{
+    padding-right: 18px;
+    position: absolute;
+    right: 0;
+}
+
+.menu-superior .perfil .img{
+    cursor: pointer;
+}
+
+
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+
+.informacoes .imagem {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacoes .imagem p {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.informacoes .imagem img {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.informacoes .dados {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    padding-left: 10px;
+
+    font-size: 20px;
+}
+
+.texto {
+    /* top right bottom left */
+    padding: 0 100px 0 100px;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    font-size: 20px;
+}
